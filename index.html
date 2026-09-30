@@ -2,82 +2,52 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Education Podcasts</title>
-    <link rel="stylesheet" href="css/header.css" type="text/css">
-    <style>
-        article{
-            display: flex;
-        }
-        .imageContainer{
-            display: block;
-            unicode-bidi: isolate;
-        }
-        .imageContainer > .thumbnail{
-            width: 250px;
-            height: 250px;
-            margin: 10px;
-        }
-        .podcast-title{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .podcast-title h3{
-            font-size: xxx-large;
-        }
-    </style>
+    <title>Simple Search</title>
 </head>
 <body>
-<header>
-    <h1>Top Education Podcasts</h1>
-    <h2>2026</h2>
-</header>
-
-<main>
-    <article>
-        <div class="imageContainer">
-            <img class="thumbnail" src="images/MindShift-by-KQED-768x768.webp" alt="Mindshift by KQED">
+<form id="simpleSearch" method="post" action="https://request-mirror.ohdear.app/post">
+    <fieldset id="simpleForm" name="simpleForm">
+        <div>
+            <label for="username">User Name:</label>
+            <input id="username" placeholder="put your username here" type="text" name="user" required>
         </div>
-        <div class="podcast-title">
-            <a href="details/mindshift.html">
-                <h3>Mindshift by KQED</h3>
-            </a>
+        <div>
+            <label for="password">Password:</label>
+            <input id="password" placeholder="put your password here" type="password" name="pass" required>
         </div>
-    </article>
-    <article>
-        <div class="imageContainer">
-            <img class="thumbnail" src="images/Too-Dope-Teachers-and-a-Mic.webp" alt="Too Dope Teachers and a Mic">
+        <div>
+            <label for="email">Email:</label>
+            <input id="email" placeholder="put your email address here" type="email" name="email" required>
         </div>
-        <div class="podcast-title">
-            <a href="details/todope.html">
-                <h3>Too Dope Teachers and a Mic</h3>
-            </a>
+        <div>
+            <label for="phone">Phone</label>
+            <input id="phone" placeholder="put your phone number here" type="number" name="phone">
         </div>
-    </article>
-    <article>
-        <div class="imageContainer">
-            <img class="thumbnail" src="images/The-Creative-Classroom.webp" alt="The Creative Classroom">
-        </div>
-        <div class="podcast-title">
-            <h3>The Creative Classroom</h3>
-        </div>
-    </article>
-    <article>
-        <div class="imageContainer">
-            <img class="thumbnail" src="images/Teachers-on-Fire-with-Tim-Cavey-768x768.webp" alt="Teachers on Fire with Tim Cavey">
-        </div>
-        <div class="podcast-title">
-            <h3>Teachers on Fire With Time Kavey</h3>
-        </div>
-    </article>
-    <article>
-        <div class="imageContainer">
-            <img class="thumbnail" src="images/Teachers-Off-Duty-768x768.webp" alt="Teachers Off Duty 768">
-        </div>
-        <div class="podcast-title">
-            <h3>Teachers Off Duty</h3>
-        </div>
-    </article>
-</main>
+    </fieldset>
+    <div>
+        <label for="linkden">Linkden: </label>
+        <input id="linkden" placeholder="put your linkden link here" type="url" name="link">
+    </div>
+    <div>
+        <label for="birthday">Birthday: </label>
+        <input id="birthday" placeholder="put your birthday here" type="date" name="birthday">
+    </div>
+    <div>
+        <label for="age">Age: </label>
+        <input id="age" placeholder="put your age here" type="number" name="age">
+    </div>
+    <div>
+        <label for="desired_salary">Desired Salary</label>
+        <input id="desired_salary" placeholder="put your desired salary here" type="text" name="desired_salary">
+    </div>
+    <div>
+        <label for="resuem">Upload your Resume</label>
+        <input id="resuem" placeholder="put your Resume" type="file" name="resuem">
+    </div>
+    <input type="reset" value="senior">
+    <input type="checkbox" name="Webdev" value="Webdev">
+    <input type="checkbox" name="database" value="database">
+    <button type="submit">Search</button>
+</form>
 </body>
 </html>

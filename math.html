@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MathExample</title>
+    <script src="callback.js"></script>
+</head>
+<body>
+<script>
+    var myNumber=5;
+    console.log(`The orginal number is ${myNumber}`);
+</script>
+<button onClick="myNumber=doMath(myNumber,addANumber);console.log(myNumber);">Add</button>
+<button onClick="myNumber=doMath(myNumber,subtractANumber);console.log(myNumber);">Subtract</button>
+<button onclick="myNumber=doMath(myNumber,muitiplyNumber);console.log(myNumber)">Multiply</button>
+
+</body>
+</html>

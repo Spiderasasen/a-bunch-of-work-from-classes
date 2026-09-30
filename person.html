@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Person</title>
+    <script src="person.js"></script>
+</head>
+<body>
+    <button onclick="
+        person=promptAndCreatePerson();
+        createParents(person);
+        console.log(person);
+    ">
+        Create a Person
+    </button>
+    <button onclick="titleParents(person)">Look at the parents!</button>
+</body>
+</html>

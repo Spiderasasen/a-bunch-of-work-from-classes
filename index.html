@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript Array Example</title>
+
+    <script src="myscript.js"></script>
+</head>
+<body>
+JavaScript Examples - Look At Console Log
+<script>
+    function findIndexOf(array, valueToFind){
+        return array.indexOf(valueToFind);
+    }
+
+    console.log("Start code block A");
+    booleanVar = prompt("Enter true");
+    try {
+        if (booleanVar) {
+            var variable1="Used var";
+            let variable2="Used let";
+        }
+
+        console.log("variable1 = " + variable1);
+        console.log("variable2 = " + variable2);
+    } catch (exception) {
+        console.log(exception);
+    }
+
+    console.log("End code block A");
+</script>
+
+<script>
+    console.log("Start code block B");
+    let cityList = ["Elon","Charlotte","Raleigh","Durham"]
+    let duplicateCityList = copyArray(cityList);
+    console.log("Duplicate City List = " + duplicateCityList);
+
+    cityList = addItemToArray(cityList,"Burlington");
+    console.log("New City List = " + cityList);
+
+    const newCityList = removeItemFromArray(cityList,"Burlington");
+    console.log(`Original City List = ${cityList}\nNew City List = ${newCityList}`);
+
+    duplicateCityList = removeItemFromArray(duplicateCityList,"Charlotte");
+    console.log("New Duplicate City List = " + duplicateCityList);
+
+    console.log("End code block B");
+</script>
+</body>
+</html>

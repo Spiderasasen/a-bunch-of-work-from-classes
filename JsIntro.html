@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function getInputNumber(varName){
+            let value = prompt(`Enter a value for ${varName}:`);
+            isNaN(parseInt(value)) ? value = 0 : value = parseInt(value);
+            console.log("user entered: " + value);
+            return value;
+        }
+
+
+        console.log('Starting to run JavaScript');
+        let x = prompt("Enter x");
+        if(!isNaN(parseInt(x))){
+            x = parseInt(x);
+        }
+        else{
+            x = 0;
+        }
+        console.log(x);
+        let y = prompt("Enter y");
+        isNaN(parseInt(y)) ? y=0 : y=parseInt(y);
+        console.log(y);
+        const z=x+y;
+        console.log('x+y=' + z);
+        alert(x + ' + ' + y + ' = ' + z);
+        console.log('Done Running Script')
+
+        let a = 10;
+        let b = "10";
+        console.log(a == b);
+        console.log(a === b);
+    </script>
+
+</head>
+<body>
+Welcome to JavaScript
+
+Look at the Console log for details
+</body>
+</html>

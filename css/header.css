@@ -1,0 +1,15 @@
+header{
+    background-color: rebeccapurple;
+    color: white;
+    margin: 0;
+    text-align: center;
+}
+header > h1{
+    padding-top: 15px;
+    margin-bottom: 10px;
+    font-size: xxx-large;
+}
+header > h2{
+    font-size: xx-large;
+    margin: 0;
+}

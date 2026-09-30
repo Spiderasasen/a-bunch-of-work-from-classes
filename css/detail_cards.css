@@ -1,0 +1,17 @@
+.podcast-header{
+    font-size: xxx-large;
+    text-align: center;
+}
+.picture-panel > img{
+    width: 500px;
+    height: 500px;
+}
+.main-panel{
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    margin: 10px;
+}
+.podcast-description{
+    font-size: x-large;
+}

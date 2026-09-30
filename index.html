@@ -2,50 +2,82 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>JavaScript Array Example</title>
-
-    <script src="myscript.js"></script>
+    <title>Education Podcasts</title>
+    <link rel="stylesheet" href="css/header.css" type="text/css">
+    <style>
+        article{
+            display: flex;
+        }
+        .imageContainer{
+            display: block;
+            unicode-bidi: isolate;
+        }
+        .imageContainer > .thumbnail{
+            width: 250px;
+            height: 250px;
+            margin: 10px;
+        }
+        .podcast-title{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .podcast-title h3{
+            font-size: xxx-large;
+        }
+    </style>
 </head>
 <body>
-JavaScript Examples - Look At Console Log
-<script>
-    function findIndexOf(array, valueToFind){
-        return array.indexOf(valueToFind);
-    }
+<header>
+    <h1>Top Education Podcasts</h1>
+    <h2>2026</h2>
+</header>
 
-    console.log("Start code block A");
-    booleanVar = prompt("Enter true");
-    try {
-        if (booleanVar) {
-            var variable1="Used var";
-            let variable2="Used let";
-        }
-
-        console.log("variable1 = " + variable1);
-        console.log("variable2 = " + variable2);
-    } catch (exception) {
-        console.log(exception);
-    }
-
-    console.log("End code block A");
-</script>
-
-<script>
-    console.log("Start code block B");
-    let cityList = ["Elon","Charlotte","Raleigh","Durham"]
-    let duplicateCityList = copyArray(cityList);
-    console.log("Duplicate City List = " + duplicateCityList);
-
-    cityList = addItemToArray(cityList,"Burlington");
-    console.log("New City List = " + cityList);
-
-    const newCityList = removeItemFromArray(cityList,"Burlington");
-    console.log(`Original City List = ${cityList}\nNew City List = ${newCityList}`);
-
-    duplicateCityList = removeItemFromArray(duplicateCityList,"Charlotte");
-    console.log("New Duplicate City List = " + duplicateCityList);
-
-    console.log("End code block B");
-</script>
+<main>
+    <article>
+        <div class="imageContainer">
+            <img class="thumbnail" src="images/MindShift-by-KQED-768x768.webp" alt="Mindshift by KQED">
+        </div>
+        <div class="podcast-title">
+            <a href="details/mindshift.html">
+                <h3>Mindshift by KQED</h3>
+            </a>
+        </div>
+    </article>
+    <article>
+        <div class="imageContainer">
+            <img class="thumbnail" src="images/Too-Dope-Teachers-and-a-Mic.webp" alt="Too Dope Teachers and a Mic">
+        </div>
+        <div class="podcast-title">
+            <a href="details/todope.html">
+                <h3>Too Dope Teachers and a Mic</h3>
+            </a>
+        </div>
+    </article>
+    <article>
+        <div class="imageContainer">
+            <img class="thumbnail" src="images/The-Creative-Classroom.webp" alt="The Creative Classroom">
+        </div>
+        <div class="podcast-title">
+            <h3>The Creative Classroom</h3>
+        </div>
+    </article>
+    <article>
+        <div class="imageContainer">
+            <img class="thumbnail" src="images/Teachers-on-Fire-with-Tim-Cavey-768x768.webp" alt="Teachers on Fire with Tim Cavey">
+        </div>
+        <div class="podcast-title">
+            <h3>Teachers on Fire With Time Kavey</h3>
+        </div>
+    </article>
+    <article>
+        <div class="imageContainer">
+            <img class="thumbnail" src="images/Teachers-Off-Duty-768x768.webp" alt="Teachers Off Duty 768">
+        </div>
+        <div class="podcast-title">
+            <h3>Teachers Off Duty</h3>
+        </div>
+    </article>
+</main>
 </body>
 </html>
